@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia Web 2 - HTML 5</title>
+     <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Anatomia de uma página HTML5</h1>
+            <p>Parte 2: Formulários e Textos</p>
+        </div>
+        <p><span>⭠</span>Voltar para Parte 1</p>
+    </header>
+    <main class="conteiner">
+        <div class="card">
+            <h2>
+                Aprofundando o Conhecimento
+            </h2>
+            <p>
+                Nesta segunda parte, exploramos tags essenciais para Interatividade (Formulários) e para dar um significado ainda mais rico ao conteúdo textual.
+            </p>
+        </div>
+        <section id="FormulariosInterativos">
+            <h3>Formulários Interativos: Coletando Dados</h3>
+            <div class="card grid-container">
+                <div>
+                    <h4>Informações Pessoais</h4>
+                    <fieldset>
+                        <p>Nome Completo:</p>
+                        <input type="text" placeholder="Ex: Ana Silva">
+                        <p>Data de Nascimento:</p>
+                        <input type="date">
+                        <p>Curso de Interesse (com autocompletar):</p>
+                        <input list="cursos" placeholder="Escolha...">
+                    </fieldset>
+                    <datalist id="cursos">
+                        <option value="Desenvolvimento Web">
+                        <option value="Design Gráfico">
+                        <option value="Marketing Digital">
+                        <option value="Data Science">
+                        <option value="Cibersegurança">
+                        <option value="Inteligência Artificial">
+                        <option value="Ciência de Dados">
+                        <option value="Engenharia de Software">
+                        <option value="Redes de Computadores">
+                        <option value="Administração de Sistemas">
+                    </datalist>
+                </div>
+                <div class="tag-highlight">
+                    <p>O formulário agora combina mútiplos elementos: <code>&lt;datalist&gt;</code> para autocompletar, e
+                        <code>&lt;select&gt;</code> para uma lista fechada de opções.
+                    </p>
+                    <p>Para escolhas, usamos <code>&lt;input type="radio"&gt; (escolha única) e <code>&lt;input</code></code>
+                        <code> type="checkbox"&gt;</code> (múltipla escolha).
+                    </p>
+                    <p>A tag <code>&lt;output&gt;</code> exibe dinamicamente o valor do <code>&lt;input type="range"&gt;</code> , criando
+                        uma experiência interativa.
+                    </p>
+                    <p>
+                        Note também os atributos <code>placeholder</code>, que exibe um texto de ajuda no campo, e
+                        <code>required</code>, que torna o preenchimento obrigatório.
+                    </p>
+                </div>
+                <div>
+                    <h4>
+                        Preferências
+                    </h4>
+                    <fieldset>
+                        <p>
+                            Área de Foco (com lista dropdown):
+                        </p>
+                        <select>
+                            <option value="escolha">Escolha...</option>
+                            <option value="frontend">Front-end</option>
+                            <option value="backend">Back-end</option>
+                            <option value="fullstack">Full Stack</option>
+                            <option value="data">Data Science</option>
+                            <option value="security">Cibersegurança</option>
+                            <option value="ai">Inteligência Artificial</option>
+                            <option value="devops">DevOps</option>
+                            <option value="mobile">Desenvolvimento Mobile</option>
+                            <option value="cloud">Computação em Nuvem</option>
+                            <option value="uxui">UX/UI Design</option>
+                        </select>
+                        <p>
+                            Nível de Experiência:
+                        </p>
+                        <input type="radio" name="exp" value="iniciante" id="iniciante">
+                        <label for="iniciante">Iniciante</label><br>
+                        <input type="radio" name="exp" value="intermediario" id="intermediario">
+                        <label for="intermediario">Intermediário</label><br>
+                        <input type="radio" name="exp" value="avancado" id="avancado">
+                        <label for="avancado">Avançado</label>
+                        <p>
+                            Tecnologias de Interesse:
+                        </p>
+                        <input type="checkbox" name="tech" value="htmlcss" id="htmlcss">
+                        <label for="htmlcss">HTML & CSS</label><br>
+                        <input type="checkbox" name="tech" value="javascript" id="javascript">
+                        <label for="javascript">JavaScript</label><br>
+                        <input type="checkbox" name="tech" value="react" id="react">
+                        <label for="react">React</label>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
