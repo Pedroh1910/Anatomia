@@ -249,3 +249,32 @@ footer {
     display: flex;
     color: #1dc934;
 }
+
+.divider {
+    margin-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1.5rem;
+}
+
+.divider-list > * + * {
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #1f2937;
+    color: #d1d5db;
+    margin-top: 3rem;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+     .header-content nav {
+        margin-top: 0;
+    }
+}
